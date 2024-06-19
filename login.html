@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .f
+        {
+            background:rgb(0,0,0);
+      background: rgba(0, 0, 0, 0.6);
+      display:table;
+      text-align: center;
+      margin:0 auto;
+        }
+    </style>
+</head>
+
+<body>
+  
+    <form>
+        
+        <center>
+            <div class="f"></div>
+            <h1>LOGIN FORM</h1> 
+        Username :<input type="text" class="fname" id="a"><br><br>
+    Password:<input type="password" value="password"  class="fname" id="b"><br><br>
+     <button type ="text"Onclick="log()">login</button>
+    </center>
+           </div> 
+            </form>
+    <script>
+        function log()
+        {
+            let c=document.getElementById("a").value;
+            let d=document.getElementById("b").value;
+            if(c=="admin")
+            {
+                 if (d=="1234")
+                {
+                alert("login successfully")
+                }
+               else 
+              {
+                alert("invalid password")
+               }
+            }
+        else
+        {
+           alert("invalid password and username")
+        }
+          
+       
+        }
+
+
+    </script>
+</body>
+</html>

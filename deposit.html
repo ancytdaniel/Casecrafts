@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <style>
+    body{
+      background-image: url('https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?cs=srgb&dl=pexels-francesco-ungaro-281260.jpg&fm=jpg.jpg');
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                  background-size: cover;
+    }
+    .b{
+      background:rgb(0,0,0);
+      background: rgba(0, 0, 0, 0.6);
+      display:table;
+      text-align: center;
+      margin:0 auto;
+      
+    }
+  </style>
+   
+   <div class="b">
+
+  
+    <h1>ABC BANK</h1>
+    <form >
+    
+      enter your name:  <input type="text" id="fname" name="fname"><br><br>
+      
+      enter your account:  <input type="text" id="fname" name="fname"><br><br>
+      
+      enter the amount:  <input type="text" id="num1" name="fname"><br><br>
+     
+      <button type="button"Onclick="myfunc()">deposit</button><button type="button"OnClick="mywithdraw()">withdraw</button><br><br>
+      available balance:<input type="text" id="num3" name="fname"><br><br>
+    </form>
+    <script>
+      function myfunc()
+      {
+        const inp1=parseInt(document.getElementById("num1").value)
+        document.getElementById("num3").value=inp1
+        
+      }
+      function mywithdraw()
+      {
+        const inp1=parseInt(document.getElementById("num1").value)
+        const inp2=parseInt(document.getElementById("num3").value)
+        let a=inp1-inp2
+        document.getElementById("num3").value=a
+
+      }
+
+    </script>
+
+    
+
+</center>
+</div>
+</body>
+</html>
